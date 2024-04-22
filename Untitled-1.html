@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Anggota Klub Olahraga</title>
+</head>
+<body style="background-color: beige;">
+    <header style="background-color: #bfcad8; color: #000000; padding: 10px; text-align: center;">
+        <h1>Pendaftaran Anggota Klub Olahraga</h1>
+        <p>Pengisian Formulir Pendaftaran Klub Olahraga</p>
+    </header>
+    <br>
+
+    <form>
+        <h1>Pengisian Data Diri Calon Anggota</h1>
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            <br>
+            <label for="fullname">Nama Lengkap:</label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+            
+            <label for="email">Alamat Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="phone">Nomor Telepon:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            
+            <label for="birthdate">Tanggal Lahir:</label><br>
+            <input type="date" id="birthdate" name="birthdate"><br>
+            
+            <label for="address">Alamat Rumah:</label><br>
+            <textarea id="address" name="address"></textarea><br>
+            
+            <label for="city">Kota:</label><br>
+            <input type="text" id="city" name="city"><br>
+            
+            <label for="zipcode">Kode Pos:</label><br>
+            <input type="text" id="zipcode" name="zipcode"><br>
+            
+            <label for="gender">Jenis Kelamin:</label><br>
+            <input type="radio" id="wanita" name="gender" value="wanita">
+            <label for="wanita">Perempuan</label><br>
+            <input type="radio" id="Laki-laki" name="gender" value="Laki-laki">
+            <label for="Laki-laki">Laki-laki</label><br>
+            
+            <label for="sports">Cabang Olahraga Pilihan:</label><br>
+            <select id="sports" name="sports">
+              <option value="soccer">Sepak Bola</option>
+              <option value="basketball">Bola Basket</option>
+              <option value="volleyball">Bola Voli</option>
+              <option value="badminton">Bulutangkis</option>
+            </select><br>
+            
+            <label for="history">Riwayat Olahraga Sebelumnya:</label><br>
+            <textarea id="history" name="history"></textarea><br>
+            
+            <br>
+            <label for="availability">Ketersediaan:</label><br>
+            <input type="text" id="availability" name="availability" placeholder="Misal: Senin-Jumat, sore hari"><br>
+            
+            <label for="social-media">Profil Media Sosial:</label><br>
+            <input type="url" id="social-media" name="social-media" placeholder="https://www.facebook.com/"><br>
+            
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Daftar">
+        </fieldset>
+    </form>
+</body>
+</html>
